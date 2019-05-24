@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Identity
+@using WebSiteRazorPages.Models
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+        <ul  id="menu-header" class="menu genesis-nav-menu menu-header-social ">
+            <li>
+                <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>
+            <li>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
+            </li>
+        </ul>
+    </form>
+}
+else
+{
+    <ul id="menu-header" class="menu genesis-nav-menu menu-header-social">
+        <li id="menu-item-74164" class="menu-offer2 menu-item menu-item-type-custom menu-item-object-custom menu-item-74164"><a asp-area="Identity" asp-page="/Account/Login">MEMBER LOGIN</a></li>
+        <li id="menu-item-49022" class="menu-offer1 menu-item menu-item-type-custom menu-item-object-custom menu-item-49022"><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+    </ul>
+}

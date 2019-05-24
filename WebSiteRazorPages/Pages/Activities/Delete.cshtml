@@ -1,0 +1,516 @@
+﻿@page
+@model WebSiteRazorPages.Pages.Activities.DeleteModel
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if IE 9]>
+<html class="no-js lt-ie10" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://room.handsonaswegrow.com/xmlrpc.php">
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="https://room.handsonaswegrow.com/wp-content/uploads/2017/08/hoawg-favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="https://room.handsonaswegrow.com/wp-content/uploads/2017/08/hoawg-favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://room.handsonaswegrow.com/wp-content/uploads/2017/08/hoawg-favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://room.handsonaswegrow.com/wp-content/uploads/2017/08/hoawg-favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://room.handsonaswegrow.com/wp-content/uploads/2017/08/hoawg-favicon.png">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/css/fontello-ie7.css">
+    <![endif]-->
+
+
+    <title>Shop Activity Plan eBooks | The Activity Room®</title>
+
+    <!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <link rel="canonical" href="https://room.handsonaswegrow.com/shop/" />
+    <link rel="publisher" href="https://plus.google.com/u/0/b/103165665481712783396/103165665481712783396" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Engaging, Pre-Planned Activities That Help Create Magical Moments Together." />
+    <meta property="og:description" content="Save tons of time and stress looking for and planning activities to keep them busy! Have them right at your fingertips!" />
+    <meta property="og:url" content="https://room.handsonaswegrow.com/shop/" />
+    <meta property="og:site_name" content="The Activity Room®" />
+    <meta property="article:publisher" content="http://www.facebook.com/handsonaswegrow" />
+    <meta property="article:author" content="http://www.facebook.com/handsonaswegrow" />
+    <meta property="og:image" content="https://room.handsonaswegrow.com/wp-content/uploads/2017/01/blocks-puzzle-background-room-20160420-5496.jpg" />
+    <meta property="og:image:secure_url" content="https://room.handsonaswegrow.com/wp-content/uploads/2017/01/blocks-puzzle-background-room-20160420-5496.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="533" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shop Activity Plan eBooks | The Activity Room®" />
+    <meta name="twitter:site" content="@@handsonaswegrow" />
+    <meta name="twitter:image" content="https://room.handsonaswegrow.com/wp-content/uploads/2017/01/blocks-puzzle-background-room-20160420-5496.jpg" />
+    <meta name="twitter:creator" content="@@handsonaswegrow" />
+    <script type='application/ld+json'>
+        {"@@context":"https:\/\/schema.org","@@type":"Organization","url":"https:\/\/room.handsonaswegrow.com\/","sameAs":["http:\/\/www.facebook.com\/handsonaswegrow","https:\/\/instagram.com\/handsonaswegrow","https:\/\/plus.google.com\/u\/0\/b\/103165665481712783396\/103165665481712783396","http:\/\/www.pinterest.com\/handsonaswegrow\/pins\/","https:\/\/twitter.com\/handsonaswegrow"],"@@id":"https:\/\/room.handsonaswegrow.com\/#organization","name":"Hands On As We Grow","logo":"https:\/\/room.handsonaswegrow.com\/wp-content\/uploads\/logo.png"}
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="The Activity Room® &raquo; Feed" href="https://room.handsonaswegrow.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="The Activity Room® &raquo; Comments Feed" href="https://room.handsonaswegrow.com/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/room.handsonaswegrow.com\/wp-includes\/js\/wp-emoji-release.min.js" } };
+        !function (a, b, c) { function d(a, b) { var c = String.fromCharCode; l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0); var d = k.toDataURL(); l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0); var e = k.toDataURL(); return d === e } function e(a) { var b; if (!l || !l.fillText) return !1; switch (l.textBaseline = "top", l.font = "600 32px Arial", a) { case "flag": return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b); case "emoji": return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b }return !1 } function f(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d"); for (j = Array("flag", "emoji"), c.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < j.length; i++)c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (h = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <!-- WP Fusion -->
+    <style type="text/css">
+        .woocommerce .product .variations option:disabled {
+            display: none;
+        }
+    </style>
+    <link rel='stylesheet' id='pmpro_frontend-css' href='https://room.handsonaswegrow.com/wp-content/plugins/paid-memberships-pro/css/frontend.css' type='text/css' media='screen' />
+    <link rel='stylesheet' id='pmpro_print-css' href='https://room.handsonaswegrow.com/wp-content/plugins/paid-memberships-pro/css/print.css' type='text/css' media='print' />
+    <link rel='stylesheet' id='affwp-forms-css' href='https://room.handsonaswegrow.com/wp-content/plugins/affiliate-wp/assets/css/forms.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pmpro-woocommerce-css' href='https://room.handsonaswegrow.com/wp-content/plugins/pmpro-woocommerce/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='https://room.handsonaswegrow.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+    <style id='font-awesome-inline-css' type='text/css'>
+        [data-font="FontAwesome"]:before {
+            font-family: 'FontAwesome' !important;
+            content: attr(data-icon) !important;
+            speak: none !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            line-height: 1 !important;
+            font-style: normal !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+        }
+    </style>
+    <link rel='stylesheet' id='cookie-consent-style-css' href='https://room.handsonaswegrow.com/wp-content/plugins/uk-cookie-consent/assets/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='follow-up-emails-css' href='https://room.handsonaswegrow.com/wp-content/plugins/woocommerce-follow-up-emails/templates/followups.css' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='dlm-frontend-css' href='https://room.handsonaswegrow.com/wp-content/plugins/download-monitor/assets/css/frontend.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='https://room.handsonaswegrow.com/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+    <style id='dashicons-inline-css' type='text/css'>
+        [data-font="Dashicons"]:before {
+            font-family: 'Dashicons' !important;
+            content: attr(data-icon) !important;
+            speak: none !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            line-height: 1 !important;
+            font-style: normal !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+        }
+    </style>
+    <link rel='stylesheet' id='bootstrap-css' href='https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-app-css' href='https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/css/app.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='magnific-popup-css' href='https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/js/plugins/magnific-popup/magnific.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-fonts-css' href='https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/css/fontello.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='mediaelement-css' href='https://room.handsonaswegrow.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-google-fonts-css' href='//fonts.googleapis.com/css?family=Droid+Serif%7CSource+Sans+Pro%3A400&#038;subset=latin&#038;ver=2e62dc3bfa2c8f39d09c2022cbca0d02' type='text/css' media='all' />
+    <link rel='stylesheet' id='simple-favorites-css' href='https://room.handsonaswegrow.com/wp-content/plugins/favorites/assets/css/favorites.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='https://room.handsonaswegrow.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='dkpdf-frontend-css' href='https://room.handsonaswegrow.com/wp-content/plugins/dk-pdf/assets/css/frontend.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-woocommerce-css' href='https://room.handsonaswegrow.com/wp-content/themes/kleo/woocommerce/assets/css/woocommerce.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-colors-css' href='https://room.handsonaswegrow.com/wp-content/uploads/custom_styles/dynamic.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wc-bundle-style-css' href='https://room.handsonaswegrow.com/wp-content/plugins/woocommerce-product-bundles/assets/css/frontend/woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-plugins-css' href='https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/css/plugins.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='kleo-style-css' href='https://room.handsonaswegrow.com/wp-content/themes/handsonaswegrow/style.css' type='text/css' media='all' />
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-includes/js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var FUE = { "ajaxurl": "https:\/\/room.handsonaswegrow.com\/wp-admin\/admin-ajax.php", "ajax_loader": "https:\/\/room.handsonaswegrow.com\/wp-content\/plugins\/woocommerce-follow-up-emails\/templates\/images\/ajax-loader.gif" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/woocommerce-follow-up-emails/templates/js/fue-account-subscriptions.js'></script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var affwp_scripts = { "ajaxurl": "https:\/\/room.handsonaswegrow.com\/wp-admin\/admin-ajax.php" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var affwp_debug_vars = { "integrations": { "gravityforms": "Gravity Forms", "woocommerce": "WooCommerce" }, "version": "2.2.12", "currency": "USD" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/room.handsonaswegrow.com\/wc-cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var affwp_erl_vars = { "cookie_expiration": "90", "referral_variable": "ref", "url": "https:\/\/room.handsonaswegrow.com" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/affiliatewp-external-referral-links/assets/js/affwp-external-referral-links.min.js'></script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/themes/kleo/assets/js/modernizr.custom.46504.js'></script>
+    <script type='text/javascript'>
+        var mejsL10n = { "language": "en", "strings": { "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen-off": "Turn off Fullscreen", "mejs.fullscreen-on": "Go Fullscreen", "mejs.download-video": "Download Video", "mejs.fullscreen": "Fullscreen", "mejs.time-jump-forward": ["Jump forward 1 second", "Jump forward %1 seconds"], "mejs.loop": "Toggle Loop", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.close": "Close", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.time-skip-back": ["Skip back 1 second", "Skip back %1 seconds"], "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.mute-toggle": "Mute Toggle", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.ad-skip": "Skip ad", "mejs.ad-skip-info": ["Skip in 1 second", "Skip in %1 seconds"], "mejs.source-chooser": "Source Chooser", "mejs.stop": "Stop", "mejs.speed-rate": "Speed Rate", "mejs.live-broadcast": "Live Broadcast", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js'></script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpmejsSettings = { "pluginPath": "\/wp-includes\/js\/mediaelement\/", "classPrefix": "mejs-", "stretching": "responsive" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var favorites_data = { "ajaxurl": "https:\/\/room.handsonaswegrow.com\/wp-admin\/admin-ajax.php", "nonce": "de0343bbd4", "favorite": "Favorite <i class=\"sf-icon-star-empty\"><\/i>", "favorited": "Favorited <i class=\"sf-icon-star-full\"><\/i>", "includecount": "", "indicate_loading": "", "loading_text": "Loading", "loading_image": "", "loading_image_active": "", "loading_image_preload": "", "cache_enabled": "1", "button_options": { "button_type": { "label": "Favorite", "icon": "<i class=\"sf-icon-favorite\"><\/i>", "icon_class": "sf-icon-favorite", "state_default": "Favorite", "state_active": "Favorited" }, "custom_colors": true, "box_shadow": false, "include_count": false, "default": { "background_default": "#1e4f6d", "border_default": "#1e4f6d", "text_default": "#ffffff", "icon_default": "#ffffff", "count_default": false }, "active": { "background_active": "#cd0a2d", "border_active": "#cd0a2d", "text_active": "#ffffff", "icon_active": "#ffffff", "count_active": false } }, "authentication_modal_content": "<p>Please login to add favorites.<\/p>\n<p><a href=\"#\" data-favorites-modal-close>Dismiss this notice<\/a><\/p>\n", "authentication_redirect": "", "dev_mode": "", "logged_in": "", "user_id": "0", "authentication_redirect_url": "https:\/\/room.handsonaswegrow.com\/wp-login.php" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://room.handsonaswegrow.com/wp-content/plugins/favorites/assets/js/favorites.min.js'></script>
+    <link rel='https://api.w.org/' href='https://room.handsonaswegrow.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://room.handsonaswegrow.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://room.handsonaswegrow.com/wp-includes/wlwmanifest.xml" />
+
+    <link rel='shortlink' href='https://room.handsonaswegrow.com/?p=19859' />
+    <link rel="alternate" type="application/json+oembed" href="https://room.handsonaswegrow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Froom.handsonaswegrow.com%2Fshop%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://room.handsonaswegrow.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Froom.handsonaswegrow.com%2Fshop%2F&#038;format=xml" />
+    <!-- HFCM by 99 Robots - Snippet # 1: FaceBook Pixel -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '203387910028031');
+        fbq('track', "PageView");</script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=203387910028031&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- /end HFCM by 99 Robots -->
+    <!-- HFCM by 99 Robots - Snippet # 2: Google Analytics -->
+    <!-- start Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-22627168-1', 'auto', { 'allowLinker': true });
+        ga('require', 'linker');
+        ga('linker:autoLink', ['handsonaswegrow.com']);
+        ga('send', 'pageview');
+        ga('clientTracker.send', 'pageview');
+
+    </script>
+    <!-- end Google Analytics -->
+    <!-- /end HFCM by 99 Robots -->
+    <!-- HFCM by 99 Robots - Snippet # 4: Beacon -->
+    <script type="text/javascript">!function (e, t, n) { function a() { var e = t.getElementsByTagName("script")[0], n = t.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = "https://beacon-v2.helpscout.net", e.parentNode.insertBefore(n, e) } if (e.Beacon = n = function (t, n, a) { e.Beacon.readyQueue.push({ method: t, options: n, data: a }) }, n.readyQueue = [], "complete" === t.readyState) return a(); e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1) }(window, document, window.Beacon || function () { });</script>
+    <script>window.Beacon('init', '225b22bf-6720-4bc0-98ec-87b8632f36b6')</script>
+    <!-- /end HFCM by 99 Robots -->
+    <!-- HFCM by 99 Robots - Snippet # 11: Google Tag Manager (Header) -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K9QVQGG');</script>
+    <!-- End Google Tag Manager -->
+    <!-- /end HFCM by 99 Robots -->
+    <link href="https://room.handsonaswegrow.com/?ical" rel="alternative" type="text/calendar">
+    <style id="ctcc-css" type="text/css" media="screen">
+        #catapult-cookie-bar {
+            box-sizing: border-box;
+            max-height: 0;
+            opacity: 0;
+            z-index: 99999;
+            overflow: hidden;
+            color: #464646;
+            position: fixed;
+            left: 20px;
+            bottom: 6%;
+            width: 300px;
+            background-color: #efefef;
+        }
+
+            #catapult-cookie-bar a {
+                color: #007f75;
+            }
+
+            #catapult-cookie-bar .x_close span {
+                background-color: #ffffff;
+            }
+
+        button#catapultCookie {
+            background: #666666;
+            color: #ffffff;
+            border: 0;
+            padding: 6px 9px;
+            border-radius: 3px;
+        }
+
+        #catapult-cookie-bar h3 {
+            color: #464646;
+        }
+
+        .has-cookie-bar #catapult-cookie-bar {
+            opacity: 1;
+            max-height: 999px;
+            min-height: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+        var AFFWP = AFFWP || {};
+        AFFWP.referral_var = 'ref';
+        AFFWP.expiration = 365;
+        AFFWP.debug = 0;
+
+        AFFWP.cookie_domain = 'room.handsonaswegrow.com';
+
+        AFFWP.referral_credit_last = 0;
+    </script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <script type="text/javascript">
+        /*
+         prevent dom flickering for elements hidden with js
+         */
+        "use strict";
+
+        document.documentElement.className += ' js-active ';
+        document.documentElement.className += 'ontouchstart' in document.documentElement ? ' kleo-mobile ' : ' kleo-desktop ';
+
+        var prefix = ['-webkit-', '-o-', '-moz-', '-ms-', ""];
+        for (var i in prefix) {
+            if (prefix[i] + 'transform' in document.documentElement.style) document.documentElement.className += " kleo-transform ";
+        }
+    </script>
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://room.handsonaswegrow.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <style>
+        .widget_tag_cloud a {
+            font-size: small !important;
+        }
+    </style>
+    <style type="text/css" data-type="vc_custom-css">
+        .breadcrumb-extra, .quick-btn {
+            display: none !important;
+        }
+
+        .product_cat-ebooks, .type-product {
+            width: 100% !important;
+        }
+
+        .shop-product .product {
+            width: 100% !important;
+        }
+
+        .onsale {
+            background-color: #ffbf3a !important;
+        }
+
+        .newrelease {
+            background-color: #cf0a2d;
+            color: #fff;
+            padding: 20px 20px 10px;
+        }
+    </style>
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1510683109156 {
+            padding-top: 20px !important;
+        }
+
+        .vc_custom_1520305129789 {
+            margin-bottom: 100px !important;
+        }
+    </style>
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript><!-- WooCommerce Google Analytics Integration -->
+    <script type='text/javascript'>
+        var gaProperty = 'UA-22627168-1';
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+        }
+    </script>
+    <script type='text/javascript'>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-22627168-1', 'auto'); ga('set', 'anonymizeIp', true);
+        ga('set', 'dimension1', 'no');
+        ga('require', 'ec');</script>
+    <!-- /WooCommerce Google Analytics Integration -->
+</head>
+
+
+<body data-rsssl=1 class="page-template-default page page-id-19859 page-parent custom-background pmpro-body-has-access ctcc-exclude-AF ctcc-exclude-AN ctcc-exclude-AS ctcc-exclude-NA ctcc-exclude-OC ctcc-exclude-SA woocommerce-no-js kleo-navbar-fixed navbar-resize disable-all-animations-on-mobile header-overflow header-flexmenu wpb-js-composer js-comp-ver-5.6 vc_responsive">
+
+
+    <!-- PAGE LAYOUT
+    ================================================ -->
+    <!--Attributes-->
+    <div class="kleo-page">
+
+        <!-- HEADER SECTION
+        ================================================ -->
+
+        <div id="header" class="header-color">
+
+            <div class="navbar" role="navigation">
+
+
+                <div class="kleo-main-header header-extras">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <div class="kleo-mobile-switch">
+
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                            </div>
+
+                            <div class="kleo-mobile-icons">
+
+                                <a class="cart-contents mheader" href="https://room.handsonaswegrow.com/wc-cart/" title="View Cart"><span class="cart-items"><i class="icon icon-basket-full-alt"></i> </span></a>
+                            </div>
+
+                            <strong class="logo">
+                                <a href="https://room.handsonaswegrow.com">
+
+
+                                    <img id="logo_img" title="The Activity Room®" src="https://room.handsonaswegrow.com/wp-content/uploads/2018/10/logo-sticky-2x.png"
+                                         alt="The Activity Room®">
+
+
+                                </a>
+                            </strong>
+                        </div>
+
+
+
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="primary-menu collapse navbar-collapse nav-collapse">
+                            <ul id="menu-mainnav-1" class="nav navbar-nav">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-15327 active"><a title="SHOP PLANS" asp-page="./Index">SHOP PLANS</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14909"><a asp-page="~/Pages/Index">BLOG</a></li>
+                                <li class="menu-item kleo-toggle-menu shop-drop"><a class="cart-contents js-activated" href="https://room.handsonaswegrow.com/wc-cart/" title="View Cart"><span class="cart-items"><i class="icon icon-basket-full-alt"></i> </span> <span class="caret"></span></a><ul class="kleo-toggle-submenu"><li><div class="kleo-minicart"><div class="minicart-header">Your shopping bag is empty.</div><div class="minicart-buttons"><a class="btn btn-default kleo-go-shop" href="https://room.handsonaswegrow.com/shop-all/"><span class="text">Go to the shop</span></a></div></div></li></ul></li>
+                            </ul>
+                        </div>
+                        <div class="secondary-menu collapse navbar-collapse nav-collapse">
+                            <ul id="menu-buttonnav" class="nav navbar-nav">
+                                <li id="menu-item-14903" class="whitetxt whiteborder menu-item menu-item-type-custom menu-item-object-custom menu-item-14903 has-btn-see-through"><a title="JOIN THE ROOM" asp-area="Identity" asp-page="/Account/Register" class=" btn btn-see-through">JOIN THE ROOM</a></li>
+                                <li id="menu-item-14904" class="kleo-show-login menu-item menu-item-type-custom menu-item-object-custom menu-item-14904"><a title="LOGIN" asp-area="Identity" asp-page="/Account/Login" class=" btn btn-highlight">LOGIN</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div><!--end container-->
+                </div>
+            </div>
+
+        </div><!--end header-->
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>Activity</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Activity.Title)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Activity.Title)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Activity.Price)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Activity.Price)
+                </dd>
+            </dl>
+
+            <form method="post">
+                <input type="hidden" asp-for="Activity.ActivityId" />
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                <a asp-page="./Index">Back to List</a>
+            </form>
+        </div>
+</body>
+</html>
+

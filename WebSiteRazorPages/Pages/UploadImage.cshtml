@@ -1,0 +1,71 @@
+﻿@page
+@model WebSiteRazorPages.Pages.UploadImageModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <title>UploadImage</title>
+</head>
+<body>
+    <h2>UploadImage</h2>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            ...
+            <li>
+                <a asp-page="/ImageUpload">Image Upload</a>
+            </li>
+        </ul>
+    </div>
+    <form method="post" enctype="multipart/form-data" id="imageUploadForm" class="dropzone">
+        <div class="fallback">
+            <div class="form-group">
+
+                <canvas id="canvas"></canvas>
+                <input name="image" id="inp" type="file" class="form-control" accept="image/*" />
+            </div>
+            <input type="submit" value="Upload" class="btn btn-default" />
+        </div>
+    </form>
+
+    @section Scripts {
+        <script>
+        document.getElementById('inp').onchange = function (e) {
+            var img = new Image();
+            img.onload = draw;
+            img.onerror = failed;
+            img.src = URL.createObjectURL(this.files[0]);
+        };
+        function draw() {
+            var canvas = document.getElementById('canvas');
+            canvas.width = this.width;
+            canvas.height = this.height;
+            var ctx = canvas.getContext('2d');
+            ctx.drawImage(this, 0, 0);
+        }
+        function failed() {
+            console.error("The provided file couldn't be loaded as an Image media");
+        }
+        $("#imageUploadForm").dropzone({
+            url: "/imageupload",
+            paramName: "image",
+            acceptedFiles: "image/*"
+        });
+        </script>
+    }
+</body>
+</html>

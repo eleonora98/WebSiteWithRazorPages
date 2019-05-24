@@ -1,0 +1,871 @@
+﻿/*
+Theme Name:     Hands On As We Grow
+Theme URI:      https://room.handsonaswegrow.com
+Description:    Child theme for Kleo
+Author:         Contemplate Design
+Author URI:     http://contemplatedesign.com
+Template:       kleo
+Tags:  one-column, two-columns, right-sidebar, fluid-layout, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+License: GNU General Public License
+License URI: license.txt
+*/
+
+/*
+.hidescreen {
+   display: none;
+}
+*/
+
+.cookie-bar-block #catapult-cookie-bar span {
+    display: block;
+    margin: 1em 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* 
+#main-container .article-content {
+	padding-top:40px;
+}
+*/
+
+.post .article-content {
+    margin-top: 80px;
+}
+
+/*--------------
+* SINGLE PRODUCTS -- only display product description
+----------------*/
+
+.entry-summary p.price, .attachment-shop_single, .entry-summary .quantity, .single_add_to_cart_button, .entry-summary .panel-heading, .entry-summary .product_title {
+    display: none !important;
+}
+
+.woocommerce #accordion-woo .panel-body h2 {
+    display: block;
+}
+
+.panel-body {
+    border-top: 0px !important;
+}
+
+
+/*--------------
+* Login Message
+----------------*/
+#kleo-login-modal form:before {
+    content: "Note: ROOM MEMBERS before MAY 2017 must reset their password below (click on 'Lost Your Password?') to experience the new site.";
+    font-size: 12px;
+}
+
+.kleo-form-signin {
+    LINE-HEIGHT: 12PX;
+}
+
+input#username {
+    margin-top: 20px;
+    border: 1px solid #ccc !important;
+    padding: 10px !important;
+    background: #fff;
+    height: 42px;
+}
+
+input#password {
+    border: 1px solid #ccc !important;
+    padding: 10px !important;
+    height: 42px;
+}
+
+#login .btn, #forgot_form .btn-lg, .login .btn {
+    background-color: #FFBF3a !important;
+}
+
+.wrong-response {
+    font-size: 12px;
+}
+
+form#forgot_form {
+    line-height: unset;
+}
+
+#login_form .btn:hover, #forgot_form .btn:hover {
+    background-color: #7d953a;
+}
+
+#login_form .btn, #forgot_form .btn {
+    color: #fff !important;
+    border: 0px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    background-color: #FFBF3a !important;
+}
+
+input#forgot-email {
+    border: 1px solid #ccc !important;
+    padding: 25px !important;
+}
+
+
+/*----------
+FONT
+----------------------*/
+.whitetxt,
+.whitetxt a:hover {
+    color: #fff !important;
+}
+
+    .whitetxt a {
+        color: rgba(255,255,255,0.6) !important;
+    }
+
+.vc-activity-excerpt a {
+    margin: 0px 5px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+a.order-now:hover {
+    background: url(https://handsonaswegrow.com/wp-content/themes/hoawg-ewd2/images/blue.svg) no-repeat;
+    color: #fff;
+}
+
+a.order-now {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    height: 56px;
+    letter-spacing: 1px;
+    padding: 13px;
+    text-transform: uppercase;
+    width: 195px;
+    background: url(https://handsonaswegrow.com/wp-content/themes/hoawg-ewd2/images/red.svg) no-repeat;
+}
+
+.date_title {
+    font-size: 20px;
+    color: #444444;
+    line-height: 26px;
+    font-family: "Droid Serif";
+}
+
+.activity-date {
+    font-size: 12px;
+}
+
+.vc_pageable-slide-wrapper .activity-date {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+
+.activity-supplies h5 {
+    font-size: 14px;
+    font-style: italic;
+    color: #777 !important;
+    line-height: 22px;
+}
+
+.post-7248 .wpb_wrapper h5 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.supplies {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    font-family: "Droid Serif", Garamond, serif;
+    font-style: italic;
+    color: #777 !important;
+}
+
+.navbar-nav a.btn.btn-see-through:hover {
+    background: #cf0a2d !important;
+}
+
+blockquote p {
+    font-size: 24px;
+}
+
+blockquote {
+    background: url(https://handsonaswegrow.com/wp-content/themes/hoawg-ewd2/images/dot2x.png) left top repeat-x, url(https://handsonaswegrow.com/wp-content/themes/hoawg-ewd2/images/dot2x.png) left bottom repeat-x;
+    border: 0px;
+    /* border-right: 0px; */
+    width: 100%;
+    text-align: center;
+    font-family: "Droid Serif", Garamond, serif;
+    margin: 40px 0;
+    padding: 20px 40px;
+    background-size: 10px 3px, 10px 3px;
+    font-style: italic;
+}
+
+img {
+    margin: 20px auto !important;
+    display: block;
+}
+
+.download-link img {
+    margin: 0px !important;
+}
+
+/*.activity img {*/
+/*    margin: 0px 0px !important;*/
+/*	display:inline-block;*/
+/*}*/
+
+/*----------
+NAV
+----------------------*/
+.kleo-main-header .whitetxt a.btn-see-through {
+    color: #fff;
+}
+
+.kleo-main-header .whiteborder a.btn-see-through {
+    border-color: #fff;
+}
+
+.kleo-main-header .whitetxt a.btn-see-through:hover {
+    color: #333;
+    background: #fff;
+}
+
+.kleo-main-header .whiteborder a.btn-see-through:hover {
+    border-color: #fff;
+}
+
+.kleo-main-header .btn-highlight {
+    border: 0;
+}
+
+a.btn.btn-highlight:hover {
+    background-color: #cf0a2d;
+}
+
+/*----------
+TITLE
+----------------------*/
+.main-title {
+    position: relative;
+}
+
+.main-center-title .breadcrumb-extra {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    margin-right: 20px
+}
+
+.breadcrumb-extra .quick-btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.breadcrumb-extra p {
+    display: none;
+}
+
+.breadcrumb-extra .quick-btn a.backbtn {
+    padding: 10px;
+    border-radius: 3px;
+    background: #fff;
+    display: inline-block;
+}
+
+/*----------
+ACTIVITY
+----------------------*/
+.actvitiy-date-row {
+    min-height: 150px !important;
+}
+
+.activity-step-txt {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: 'Droid Serif', serif;
+}
+
+.activity-tip-txt {
+    font-size: 18px;
+    line-height: 28px;
+    font-style: oblique;
+    font-family: 'Droid Serif', serif;
+    color: #777;
+}
+
+.activity-small-txt p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.daycircle, .tipcircle {
+    display: block;
+    color: #fff;
+    background: #F6931E;
+    width: 70px;
+    /*height: 70px;*/
+    font-size: 40px;
+    padding: 14px 0 !important;
+    border-radius: 200px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.vc-activity-excerpt h5 {
+    margin-left: 50px;
+}
+
+/*----------
+ConvertKit
+----------------------*/
+body.page .ck_form.ck_naked {
+    margin: 0 auto !important;
+}
+
+    body.page .ck_form.ck_naked .ck_form_fields {
+        padding: 2% 5% !important;
+    }
+
+    body.page .ck_form.ck_naked .ck_subscribe_button {
+        background-color: #fd9600 !important;
+    }
+
+/*----------
+WooCommerce
+----------------------*/
+
+.col-sm-6 {
+    width: 100%;
+}
+
+/*.woocommerce-product-gallery .woocommerce-main-image {
+    display: none;
+}
+*/
+
+.stackcheckout .woocommerce-checkout div[class^="col-"],
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order,
+.woocommerce-account-fields {
+    float: none !important;
+    width: 100% !important;
+    display: block !important;
+    clear: both;
+}
+
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+    border-color: #FFC023 !important;
+    background-color: #FFC023 !important;
+    text-align: center;
+    font-size: 40px;
+}
+
+    .woocommerce #payment #place_order:hover,
+    .woocommerce-page #payment #place_order:hover {
+        border-color: #1B4E6E !important;
+        background-color: #1B4E6E !important;
+    }
+
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce-page .woocommerce-error, .woocommerce-page .woocommerce-info, .woocommerce-page .woocommerce-message {
+    font-size: 14px;
+}
+
+.order-review-wrap p {
+    font-size: 14px !important;
+}
+
+#billing_em_ver_field {
+    margin-bottom: 25px !important;
+}
+
+/*-- Hide WOO reset pw form --*/
+.woocommerce-ResetPassword.lost_reset_password {
+    display: none;
+}
+
+
+/*----------
+MISC
+----------------------*/
+.nomargin, .nomargin h1, .nomargin h2,
+.nomargin h3, .nomargin h4, .nomargin h5 {
+    margin: 0 !important;
+}
+
+.cornerprint {
+    float: right;
+    margin: 15px 10px;
+}
+
+.btn-super a, a.btn-super {
+    font-size: 38px !important;
+    font-weight: 900 !important;
+    padding: 20px 50px !important;
+}
+
+.newactivityrelease {
+    background-color: #ffe6b5;
+    color: #fff;
+    padding: 20px 20px 10px;
+}
+
+    .newactivityrelease .download-cover-content {
+        display: none;
+    }
+
+
+.hoverwhiteshadow img:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+}
+
+.hidevctag {
+    position: absolute;
+    display: block;
+    z-index: 100;
+    height: 50px;
+    width: 100%;
+}
+
+/*----------
+Visual Composer
+----------------------*/
+body .vc_grid-filter-dropdown .vc_grid-styled-select .vc_arrow-icon-navicon {
+    font-size: 20px;
+    display: inline;
+    vertical-align: text-bottom;
+}
+
+body .vc_grid-filter-dropdown .vc_grid-styled-select,
+body .vc_grid-filter-dropdown .vc_grid-styled-select select,
+body .vc_grid-filter-select .vc_grid-styled-select select {
+    font-size: 18px;
+    height: 40px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: -1px !important;
+}
+
+.kleo_ajax_results {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+}
+
+.callout-blockquote blockquote::before {
+    left: 50%;
+}
+
+.callout-blockquote figcaption {
+    text-align: center;
+}
+
+/*----------
+VC - Pricing
+----------------------*/
+.container .pricing-table li.list-group-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pricing-table .list-group-item::before {
+    font-size: 20px;
+}
+
+.pricing-table .btn {
+    font-size: 26px;
+    color: #fff;
+    padding: 15px 50px;
+}
+
+.main-color .pricing-table .panel-heading h3,
+.main-color .pricing-table .popular .panel-heading h3 {
+    border-bottom-color: #fff;
+}
+
+#main .main-color .pricing-table .extra-description,
+#main .main-color .pricing-table .extra-description p,
+#main .main-color .pricing-table .extra-description h1,
+#main .main-color .pricing-table .extra-description h2,
+#main .main-color .pricing-table .extra-description h3,
+#main .main-color .pricing-table .extra-description h4,
+#main .main-color .pricing-table .extra-description h5,
+#main .main-color .pricing-table .extra-description h6,
+.main-color .pricing-table .pmpro-price p.lead,
+.pricing-table .panel-info > .panel-heading h3 {
+    color: #fff !important;
+}
+
+    #main .main-color .pricing-table .extra-description,
+    #main .main-color .pricing-table .extra-description p,
+    #main .main-color .pricing-table .extra-description h1,
+    #main .main-color .pricing-table .extra-description h2,
+    #main .main-color .pricing-table .extra-description h3,
+    #main .main-color .pricing-table .extra-description h4,
+    #main .main-color .pricing-table .extra-description h5,
+    #main .main-color .pricing-table .extra-description h6 {
+        text-transform: none !important;
+    }
+
+/*----------
+DKPDF
+----------------------*/
+body .dkpdf-button-container {
+    padding: 5px;
+}
+
+    body .dkpdf-button-container a {
+        padding: 10px;
+        border-radius: 3px;
+        background: #fff;
+    }
+
+
+/*----------
+Downloads
+----------------------*/
+.downloads-no-list ul.dlm-downloads,
+.downloads-2-col ul.dlm-downloads,
+.downloads-3-col ul.dlm-downloads,
+.downloads-4-col ul.dlm-downloads,
+.downloads-5-col ul.dlm-downloads,
+.downloads-6-col ul.dlm-downloads {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .downloads-2-col ul.dlm-downloads li,
+    .downloads-3-col ul.dlm-downloads li,
+    .downloads-4-col ul.dlm-downloads li,
+    .downloads-5-col ul.dlm-downloads li,
+    .downloads-6-col ul.dlm-downloads li {
+        display: inline-block;
+        margin: 0 1%;
+        vertical-align: top;
+    }
+
+    .downloads-2-col ul.dlm-downloads li {
+        width: 48%;
+    }
+
+    .downloads-3-col ul.dlm-downloads li {
+        width: 31.333%;
+    }
+
+    .downloads-4-col ul.dlm-downloads li {
+        width: 23%;
+    }
+
+    .downloads-5-col ul.dlm-downloads li {
+        width: 18%;
+    }
+
+    .downloads-6-col ul.dlm-downloads li {
+        width: 14.666%;
+    }
+
+.downloads-no-pages .download-monitor-pagination {
+    display: none !important;
+}
+
+.download-cover-content {
+    font-size: 80%;
+    line-height: 150%;
+    padding: 5px 0 20px;
+    text-align: center;
+}
+
+img#logo_img {
+    margin: 0px !important;
+    max-height: 100px;
+}
+
+/*----------
+RESPONSIVE
+----------------------*/
+/*-- DESKTOP ---------*/
+@media only screen and (min-width: 1200px) {
+
+    .hidedesktop {
+        display: none !important;
+    }
+
+    /*-- LOGO ---------------*/
+    .header-color .kleo-main-header {
+        border: 0 !important;
+    }
+    /*
+     #header div.sticky-wrapper:not(.is-sticky) .kleo-main-header .navbar-header {
+         width: 200px;
+     }
+     div.sticky-wrapper:not(.is-sticky) .navbar-header .logo {
+         position: absolute;
+         width: 300px;
+         height: 300px;
+         top: -50px;
+         left: -80px;
+      }
+      div.sticky-wrapper:not(.is-sticky) .logo img {
+          max-height: 100% !important;
+      }
+      */
+
+
+}
+
+/*-- TABLET ---------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .hidetablet {
+        display: none !important;
+    }
+
+    .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+        font-size: 36px;
+    }
+
+    .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+        width: 100%;
+    }
+
+    ul.wc_payment_methods.payment_methods.methods {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+}
+
+/*-- MOBILE ---------*/
+@media only screen and (max-width: 768px) {
+
+    .hidemobile,
+    .quick-btn {
+        display: none !important;
+    }
+
+    .cornerprint {
+        float: none;
+        margin: 0px 10px;
+    }
+
+    .downloads-3-col ul.dlm-downloads li,
+    .downloads-4-col ul.dlm-downloads li,
+    .downloads-5-col ul.dlm-downloads li,
+    .downloads-6-col ul.dlm-downloads li {
+        width: 48%;
+    }
+
+    .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+        font-size: 36px;
+    }
+
+    #billing_em_ver_field {
+        margin-bottom: 25px !important;
+    }
+
+    .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+        width: 100%;
+    }
+}
+
+
+/*-- PRINT / PDF ---------*/
+@media print {
+
+    /*--------
+     Typography
+    -------------------*/
+    body, p, a {
+        font-family: sourcesanspro, sans-serif;
+        font-size: 12px;
+        text-indent: 0pt;
+        line-height: 1.25em;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0em;
+    }
+
+    strong, b, .bold {
+        font-weight: bold;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        font-family: droidserif, serif;
+        font-weight: normal;
+    }
+
+        h1, h1 a {
+            font-size: 2.05em;
+            margin-top: 0;
+            margin-bottom: 0.25em;
+            font-family: droidserif, serif;
+        }
+
+        h2, h2 a {
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 0.25em;
+        }
+
+        h3, h3 a {
+            font-size: 1.22em;
+            margin-top: 0;
+            margin-bottom: 0.25em;
+        }
+
+        h4, h4 a {
+            font-size: 1.05em;
+            margin-top: 0;
+            margin-bottom: 0.25em;
+        }
+
+        h5, h5 a {
+            font-size: 0.88em;
+            margin-top: 0;
+            margin-bottom: 0.25em;
+            line-height: 1.18em;
+        }
+
+        h6, h6 a {
+            font-size: 0.8em;
+            margin-top: 0;
+            margin-bottom: 0.25em;
+        }
+
+    .supplies {
+        font-size: 12px !important;
+        line-height: 14px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .activity-small-txt p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    h2.activity-title {
+        font-size: 24px !important;
+    }
+
+    h5.activity-supplies {
+        font-size: 12px;
+    }
+
+    .activity-step-txt {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: droidserif, serif;
+    }
+
+    /*---------
+     DK PDF
+    -------------*/
+
+    .dkpdf-content {
+        padding: 20px 25px 0px 30px;
+    }
+
+    .daycircle, .tipcircle {
+        display: block;
+        color: #fff;
+        background: #F6931E;
+        width: 40px;
+        height: 40px;
+        font-size: 26px;
+        padding: 10px 14px;
+        border-radius: 200px;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        font-family: opensans, sans-serif;
+        font-weight: bold;
+    }
+
+    .weekend-activity {
+        background: #ffe9d1;
+    }
+
+    .vc-activity-excerpt h5 {
+        margin-left: 0px;
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .dkpdf-header {
+        display: block;
+        background: #F89300;
+        color: #fff;
+        padding: 10px 30px;
+    }
+
+    .dkpdf-footer {
+        display: block;
+        color: #F89300;
+        padding: 30px;
+        /*border-top: 2px dashed #F89300;*/
+    }
+
+    .dkpdfg-footer {
+        padding: 30px;
+    }
+
+    .dkpdf-footer-inside {
+        width: 100%;
+        text-align: center;
+    }
+
+        .dkpdf-footer-inside p, .dkpdfg-footer-inside p {
+            letter-spacing: 9px;
+        }
+
+    .hidepdf, .hideprint {
+        display: none !important;
+    }
+
+    .printdisplay {
+        display: inline-block;
+    }
+
+    .supplylist:before {
+        list-style-type: none !important;
+        /* list-style: none !important; */
+        content: "\2610";
+        margin: 0px 15px 0px 0px;
+    }
+
+    /*------
+    Visual Composer Styles 
+    ------------------------------*/
+    .vc_non_responsive .vc_row .vc_col-sm-1, .vc_non_responsive .vc_row .vc_col-sm-10,
+    .vc_non_responsive .vc_row .vc_col-sm-11, .vc_non_responsive .vc_row .vc_col-sm-12,
+    .vc_non_responsive .vc_row .vc_col-sm-2, .vc_non_responsive .vc_row .vc_col-sm-3,
+    .vc_non_responsive .vc_row .vc_col-sm-4, .vc_non_responsive .vc_row .vc_col-sm-5,
+    .vc_non_responsive .vc_row .vc_col-sm-6, .vc_non_responsive .vc_row .vc_col-sm-7,
+    .vc_non_responsive .vc_row .vc_col-sm-8, .vc_non_responsive .vc_row .vc_col-sm-9 {
+        padding-right: -0.000001px !important;
+        padding-left: -0.000001px !important;
+    }
+
+    .vc_non_responsive .vc_row .vc_column-inner {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    /*---------
+     Custom Classes
+    -------------*/
+
+    .vc_non_responsive .actvitiy-date-row .vc_column_container .vc_column-inner {
+        height: 100px !important;
+    }
+}
